@@ -1,0 +1,63 @@
+/* Reset default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;        /* navbar background */
+  padding: 15px 50px;
+}
+
+/* Left and Right menus */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;               /* spacing between items */
+}
+
+.menu.left {
+  justify-content: flex-end;
+  flex: 1;                 /* take equal space */
+}
+
+.menu.right {
+  justify-content: flex-start;
+  flex: 1;                 /* take equal space */
+}
+
+/* Menu links */
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffcc00;          /* hover effect */
+}
+
+/* Logo in the center */
+.logo {
+  flex: 0;                 /* logo fixed in the middle */
+}
+
+.logo img {
+  width: 60px;             /* adjust logo size */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
