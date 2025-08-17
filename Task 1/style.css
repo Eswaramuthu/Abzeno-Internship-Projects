@@ -1,44 +1,43 @@
+
 /* Reset default margins/padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
 }
 
 body {
+  background-color: #000; /* Black background */
+  color: white;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
 }
 
 /* Navbar container */
 .navbar {
   display: flex;
+  justify-content: space-between; /* spaces left & right groups */
   align-items: center;
-  justify-content: center;
-  background: #111;        /* navbar background */
   padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Left and Right menus */
+/* Logo styling */
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Menu container (left & right) */
 .menu {
-  list-style: none;
   display: flex;
-  gap: 25px;               /* spacing between items */
+  gap: 75px; /* spacing between links */
 }
 
-.menu.left {
-  justify-content: flex-end;
-  flex: 1;                 /* take equal space */
-}
-
-.menu.right {
-  justify-content: flex-start;
-  flex: 1;                 /* take equal space */
-}
-
-/* Menu links */
-.menu li a {
+/* Links */
+.menu a {
   text-decoration: none;
   color: white;
   font-size: 16px;
@@ -46,18 +45,33 @@ body {
   transition: color 0.3s ease;
 }
 
-.menu li a:hover {
-  color: #ffcc00;          /* hover effect */
+.menu a:hover {
+  color: #00c3ff; /* hover effect */
 }
 
-/* Logo in the center */
-.logo {
-  flex: 0;                 /* logo fixed in the middle */
+/* Align left & right menus properly */
+.menu.left {
+  margin-right: auto;
 }
 
-.logo img {
-  width: 60px;             /* adjust logo size */
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.menu.right {
+  margin-left: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  .logo img {
+    height: 40px;
+  }
 }
