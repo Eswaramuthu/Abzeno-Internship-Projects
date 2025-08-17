@@ -75,3 +75,18 @@ body {
     height: 40px;
   }
 }
+
+.heading{
+  width: 1013px;
+  height: 200px;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.heading h1{
+
+}
