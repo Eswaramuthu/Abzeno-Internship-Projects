@@ -51,11 +51,17 @@ document.addEventListener('DOMContentLoaded', function() {
     initTimelineAnimations();
 });
 
-// Add smooth scrolling for nav links
+// Navigation handling - only prevent default for placeholder links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault();
-        // Add your navigation logic here
+        const href = this.getAttribute('href');
+        
+        // Only prevent default for placeholder links (# or empty)
+        if (!href || href === '#') {
+            e.preventDefault();
+            console.log('Navigation placeholder clicked:', this.textContent);
+        }
+        // For actual file links like teams.html, index.html etc., let the browser handle navigation normally
     });
 });
 
@@ -66,3 +72,26 @@ document.querySelectorAll('.read-more-btn').forEach(btn => {
         console.log('Read more clicked');
     });
 });
+
+// Optional: Add smooth page transitions (uncomment if desired)
+/*
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        
+        // Only apply smooth transition to actual page links
+        if (href && href !== '#' && !href.startsWith('http')) {
+            e.preventDefault();
+            
+            // Add fade out effect
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.3s ease';
+            
+            // Navigate after fade out
+            setTimeout(() => {
+                window.location.href = href;
+            }, 300);
+        }
+    });
+});
+*/

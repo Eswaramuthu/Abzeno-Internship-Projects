@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Galaxy Events</title>
+    <link rel="stylesheet" href="teams-styles.css">
+</head>
+<body>
+    <!-- Galaxy Background -->
+    <div class="galaxy-background">
+        <div class="nebula nebula-1"></div>
+        <div class="nebula nebula-2"></div>
+        <div id="stars-container"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links left">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="teams.html" class="nav-link active">TEAM</a>
+                <a href="#" class="nav-link">ABOUT US</a>
+            </div>
+            
+            <div class="logo-container">
+                <div class="logo">
+                    <!-- Replace with your actual logo -->
+                    <img src="logo.png" alt="Logo">
+                    <div class="logo-glow"></div>
+                </div>
+            </div>
+            
+            <div class="nav-links right">
+                <a href="index.html" class="nav-link">EVENTS</a>
+                <a href="#" class="nav-link">TECHNIONS</a>
+                <a href="#" class="nav-link">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Title Section -->
+            <div class="title-section">
+                <h1 class="main-title">
+                    TEAMS
+                    <div class="title-glow"></div>
+                </h1>
+                <p class="subtitle">The Department of Computer Science was established in 1984. The Department aims at upholding the cognitive aspect of education by ensuring academic excellence and intellectual growth of its students.</p>
+                <div class="title-divider"></div>
+                <div class="title-dots">
+                    <div class="dot" style="animation-delay: 0s;"></div>
+                    <div class="dot" style="animation-delay: 0.2s;"></div>
+                    <div class="dot" style="animation-delay: 0.4s;"></div>
+                    <div class="dot" style="animation-delay: 0.6s;"></div>
+                    <div class="dot" style="animation-delay: 0.8s;"></div>
+                </div>
+            </div>
+
+            <!-- Team Carousel Section -->
+            <div class="carousel-section">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn" id="prevBtn">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="team-card">
+                            <div class="card-glow"></div>
+                            <div class="team-image">
+                                <img src="https://via.placeholder.com/300x400/333/fff?text=Team+Member" alt="Team Member">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">ABHISHEK PUNIA</h3>
+                                <p class="team-role">Team Lead</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="card-glow"></div>
+                            <div class="team-image">
+                                <img src="https://via.placeholder.com/300x400/333/fff?text=Team+Member" alt="Team Member">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">SARAH JOHNSON</h3>
+                                <p class="team-role">Designer</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="card-glow"></div>
+                            <div class="team-image">
+                                <img src="https://via.placeholder.com/300x400/333/fff?text=Team+Member" alt="Team Member">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">ALEX CHEN</h3>
+                                <p class="team-role">Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="card-glow"></div>
+                            <div class="team-image">
+                                <img src="https://via.placeholder.com/300x400/333/fff?text=Team+Member" alt="Team Member">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">MARIA GARCIA</h3>
+                                <p class="team-role">Manager</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="card-glow"></div>
+                            <div class="team-image">
+                                <img src="https://via.placeholder.com/300x400/333/fff?text=Team+Member" alt="Team Member">
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">DAVID SMITH</h3>
+                                <p class="team-role">Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-btn next-btn" id="nextBtn">
+                        <svg width="24" height="24" fill="white" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <div class="indicator active" data-slide="0"></div>
+                    <div class="indicator" data-slide="1"></div>
+                    <div class="indicator" data-slide="2"></div>
+                </div>
+
+                <!-- Explore Teams Button -->
+                <div class="explore-section">
+                    <button class="explore-btn">
+                        EXPLORE TEAMS
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="gallery-section">
+                <div class="gallery-header">
+                    <h2 class="gallery-title">
+                        GALLERY
+                        <div class="title-glow"></div>
+                    </h2>
+                    <button class="view-all-btn">View All</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="https://via.placeholder.com/400x500/333/fff?text=Gallery+1" alt="Gallery Image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>PROJECT SHOWCASE</h4>
+                                <p>Annual tech exhibition</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x300/333/fff?text=Gallery+2" alt="Gallery Image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>WORKSHOP</h4>
+                                <p>Coding bootcamp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x300/333/fff?text=Gallery+3" alt="Gallery Image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>HACKATHON</h4>
+                                <p>24-hour challenge</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x300/333/fff?text=Gallery+4" alt="Gallery Image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>MEETUP</h4>
+                                <p>Community gathering</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x300/333/fff?text=Gallery+5" alt="Gallery Image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>CONFERENCE</h4>
+                                <p>Tech talks & panels</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/300x300/333/fff?text=Gallery+6" alt="Gallery Image">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h4>AWARDS</h4>
+                                <p>Recognition ceremony</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="teams-script.js"></script>
+</body>
+</html>
